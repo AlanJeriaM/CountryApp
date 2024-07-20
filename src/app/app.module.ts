@@ -14,7 +14,6 @@ import { CountriesModule } from './countries/countries.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    CountriesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
