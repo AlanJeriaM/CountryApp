@@ -12,19 +12,24 @@ path: 'home', component: HomePageComponent
 },
 {
 
-  path: 'about', component: AboutPageComponent
+path: 'about', component: AboutPageComponent
+
+},
+{
+
+path: 'contact',  component: ContactPageComponent
+
+},
+{
+
+  path: 'countries',  loadChildren: () => import('./countries/countries.module').then(m => m.CountriesModule)
 
   },
-  {
+{
 
-    path: 'contact',  component: ContactPageComponent
+path: '**',  redirectTo: 'home'
 
-    },
-  {
-
-    path: '**',  redirectTo: 'home'
-
-    }
+}
 
 
 
