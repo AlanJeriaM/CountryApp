@@ -11,6 +11,7 @@ export class ByRegionPageComponent {
 
 
   public countries: Country[] = []
+  public regions: string[] = ['Africa', 'Americas','Asia','Europe','Oceania'];
 
   constructor(private countriesService: CountriesService){
 
