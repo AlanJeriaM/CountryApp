@@ -5,6 +5,7 @@
   <div class="col">
       <app-search-box
       (onDebounce)="searchByCapital($event)"
+      [initialValue] = "initialValue"
       placeholder="Buscar por capital"></app-search-box>
   </div>
 </div>
